@@ -1,10 +1,137 @@
 .project_wrapper {
+  position: relative;
   width: 100%;
   height: 100vh;
 
-  background-color: black;
+  background-color: #333333;
 }
 
-.span {
-  color: blue;
+.header__wrapper {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 146px;
+  background-color: #333333;
+}
+
+.header_section {
+  margin: 0 auto;
+  width: 74%;
+  height: 146px;
+}
+
+.top_part {
+  height: 90px;
+  width: 100%;
+}
+
+.figure {
+  width: 99px;
+  height: 80px;
+  float: left;
+}
+
+.logo {
+  background-color: #333333;
+  position: absolute;
+  color: #8a72ff;
+  height: 29px;
+  top: 41px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 17px;
+}
+
+.circle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 50px;
+  height: 48px;
+  top: 30px;
+  background: #333333;
+  border: 3px solid #74c4ff;
+  border-radius: 20px;
+}
+
+.search {
+  width: 201px;
+  height: 33px;
+  float: right;
+}
+
+.input {
+  box-sizing: border-box;
+  position: absolute;
+  width: 201px;
+  height: 33px;
+  top: 40px;
+  background: #333333;
+  border: 1px solid #be72ff;
+  border-radius: 3px;
+}
+
+.square {
+  position: absolute;
+  width: 72px;
+  background-color: #be72ff;
+  border-radius: 3px;
+  height: 31px;
+  top: 41px;
+  margin-left: 129px;
+}
+
+.text {
+  position: absolute;
+  height: 17px;
+  top: 48px;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700px;
+  color: #333333;
+  text-shadow: 0px 0px 5px #74c4ff;
+  margin-left: 140px;
+}
+
+.bottom_part {
+  width: 100%;
+  height: 56px;
+}
+
+.menu__option {
+  display: inline-block;
+  width: 123px;
+  height: 47px;
+  background: #333333;
+  margin-left: 2.4%;
+}
+
+.active {
+  display: inline-block;
+  margin-left: 0;
+  width: 123px;
+  height: 47px;
+  background: #74c4ff;
+  border-radius: 2px;
+}
+
+.option_text {
+  position: absolute;
+  width: 72px;
+  height: 17px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 41px;
+  margin-top: 16px;
+  color: white;
+}
+
+.active_option {
+  font-weight: 700;
+  color: black;
 }
