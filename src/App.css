@@ -204,7 +204,7 @@ h2 {
   font-size: 14px;
   font-weight: 700;
   color: #333333;
-  margin-left: 25px;
+  margin-left: 23px;
   margin-top: 8px;
 }
 
@@ -494,7 +494,8 @@ h3 {
   width: 120px;
   height: 94px;
   border-radius: 20px;
-  margin-top: 32px;
+  margin-top: 22px;
+  margin-bottom: 15px;
   margin-left: 85px;
 }
 

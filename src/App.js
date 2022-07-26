@@ -199,7 +199,7 @@ const App = () => {
               <div className="bottom_block_header">
                 <span className="color_circle"></span>
                 <span className="color_rectangle size"></span>
-                <span className="block_name">RESENT POST</span>
+                <span className="block_name">RECENT POST</span>
               </div>
               <div className="bottom_block_main">
                 <div className="part1">
