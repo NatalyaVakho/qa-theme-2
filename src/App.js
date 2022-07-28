@@ -58,7 +58,7 @@ const App = () => {
                     sagittis. Praesent placerat, diam non sollicitudin suscipit,
                     eros erat
                   </p>
-                  <div className="block-main__inscription underline">Read more...</div>
+                  <div className="block-main__inscription white">Read more...</div>
                 </div>
               </div>
               <div className="block2">
@@ -138,7 +138,7 @@ const App = () => {
             </div>
           </div>
           <div className="bottom-posts">
-            <div className="bottom_left">
+            <div className="bottom-posts__bottom-services">
               <div className="bottom_block_header">
                 <span className="block-header__color-circle color"></span>
                 <span className="block-header__color-rectangle color size"></span>
@@ -157,7 +157,7 @@ const App = () => {
                 <div className="block-main__inscription distance white">Read more...</div>
               </div>
             </div>
-            <div className="bottom_middle">
+            <div className="bottom-posts__bottom-middle">
               <div className="bottom_block_header">
                 <span className="block-header__color-circle"></span>
                 <span className="block-header__color-rectangle size"></span>
@@ -190,7 +190,7 @@ const App = () => {
                     </p>
                   </div>
                 </div>
-                <div className="part3">
+                <div className="part2">
                   <div className="small_picture">
                     <span className="small_border"></span>
                     <img src={pic7} alt=""></img>
@@ -205,7 +205,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="bottom_right">
+            <div className="bottom-posts__bottom-services">
               <div className="bottom_block_header">
                 <span className="block-header__color-circle color"></span>
                 <span className="block-header__color-rectangle color size"></span>

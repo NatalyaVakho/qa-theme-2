@@ -70,6 +70,9 @@
   }
 
   &__square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 72px;
     background-color: #be72ff;
@@ -95,7 +98,6 @@
     font-weight: 700px;
     color: #333333;
     text-shadow: 0px 0px 5px #74c4ff;
-    margin-left: 11px;
   }
 }
 
@@ -106,7 +108,9 @@
   height: 49px;
 
   &__menu-option {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 123px;
     height: 47px;
     background: #333333;
@@ -120,28 +124,20 @@
 
 .option-text {
   position: absolute;
-  width: 72px;
   height: 17px;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  margin-left: 30px;
-  margin-top: 16px;
   color: rgb(255, 255, 255);
 }
 
 .active {
-  display: inline-block;
-  margin-left: 0;
-  width: 123px;
-  height: 47px;
   background: #74c4ff;
   border-radius: 2px;
 }
 
 .active_option {
-  margin-left: 40px;
   font-weight: 700;
   color: black;
 }
