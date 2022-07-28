@@ -1,4 +1,6 @@
-import "./App.css";
+import "./App.scss";
+import { Header } from "./components";
+import { Footer } from "./components";
 import banner from "./assets/images/goats.jpg";
 import pic1 from "./assets/images/download.jpg";
 import pic2 from "./assets/images/download-1.jpg";
@@ -16,77 +18,37 @@ import client5 from "./assets/images/client-4.jpg";
 const App = () => {
   return (
     <div className="project_wrapper">
-      <header className="header__wrapper">
-        <div className="header_section">
-          <div className="top_part">
-            <div className="figure">
-              <span className="circle"></span>
-              <span className="logo">QA LOGO</span>
-            </div>
-            <div className="search">
-              <span className="input"></span>
-              <span className="square"></span>
-              <span className="text">SEARCH</span>
-            </div>
-          </div>
-          <div className="bottom_part">
-            <div className="menu__option active">
-              <span className="option_text active_option">HOME</span>
-            </div>
-            <div className="menu__option">
-              <span className="option_text">ABOUT US</span>
-            </div>
-            <div className="menu__option">
-              <span className="option_text">SERVICE</span>
-            </div>
-            <div className="menu__option">
-              <span className="option_text">PARTNERS</span>
-            </div>
-            <div className="menu__option">
-              <span className="option_text">CUSTOMERS</span>
-            </div>
-            <div className="menu__option">
-              <span className="option_text">PROJECT</span>
-            </div>
-            <div className="menu__option">
-              <span className="option_text">CAREERS</span>
-            </div>
-            <div className="menu__option">
-              <span className="option_text">CONTACT</span>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main className="main_wrapper">
-        <div className="main_section">
+      <Header />
+      <main className="main">
+        <div className="main__section">
           <div className="banner">
-            <h1>Aliquam pharetra vulputate</h1>
-            <h2>
+            <span className="banner__heading">Aliquam pharetra vulputate</span>
+            <span className="banner__text">
               Vivamus est mauris, sollicitudin ut ipsum pharetra, porta rutrum
               turpis. Suspendisse sollicitudin quam eget condimentum posuere. In
               auctor vel mi porta commodo. Vestibulum mattis fringilla tempus.
               Etiam eu consectetur nisi. Aenean blandit sodales euismod. In hac
               habitasse platea dictumst.
-            </h2>
-            <div className="banner_button">
+            </span>
+            <div className="banner__banner-button">
               <span className="purple_button_text">READ MORE</span>
             </div>
-            <img className="goats" src={banner} alt="goats"></img>
+            <img className="banner__goats" src={banner} alt="goats"></img>
           </div>
-          <div className="top_text_blocks">
-            <div className="top">
+          <div className="posts">
+            <div className="posts__top">
               <div className="block1">
-                <div className="block_header">
-                  <span className="color_circle"></span>
-                  <span className="color_rectangle"></span>
-                  <span className="block_name">ABOUT SUPER LOGO</span>
+                <div className="block-header">
+                  <span className="block-header__color-circle"></span>
+                  <span className="block-header__color-rectangle"></span>
+                  <span className="block-header__block-name">ABOUT SUPER LOGO</span>
                 </div>
-                <div className="block_main">
-                  <div className="picture">
-                    <span className="border"></span>
+                <div className="block-main">
+                  <div className="block-main__picture">
+                    <span className="block-main__border"></span>
                     <img src={pic1} alt=""></img>
                   </div>
-                  <p className="long_text">
+                  <p className="block-main__long_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     quam massa, dignissim at nisi nec, iaculis molestie leo.
                     Aenean hendrerit pretium enim quis rutrum. Pellentesque
@@ -96,21 +58,21 @@ const App = () => {
                     sagittis. Praesent placerat, diam non sollicitudin suscipit,
                     eros erat
                   </p>
-                  <div className="inscription underline">Read more...</div>
+                  <div className="block-main__inscription white">Read more...</div>
                 </div>
               </div>
               <div className="block2">
-                <div className="block_header">
-                  <span className="color_circle color"></span>
-                  <span className="color_rectangle color"></span>
-                  <span className="block_name">SOME WORDS OUR CEO</span>
+                <div className="block-header">
+                  <span className="block-header__color-circle color"></span>
+                  <span className="block-header__color-rectangle color"></span>
+                  <span className="block-header__block-name">SOME WORDS OUR CEO</span>
                 </div>
-                <div className="block_main">
-                  <div className="picture">
-                    <span className="border"></span>
+                <div className="block-main">
+                  <div className="block-main__picture">
+                    <span className="block-main__border"></span>
                     <img src={pic2} alt=""></img>
                   </div>
-                  <p className="long_text">
+                  <p className="block-main__long_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     quam massa, dignissim at nisi nec, iaculis molestie leo.
                     Aenean hendrerit pretium enim quis rutrum. Pellentesque
@@ -120,23 +82,23 @@ const App = () => {
                     sagittis. Praesent placerat, diam non sollicitudin suscipit,
                     eros erat
                   </p>
-                  <div className="inscription">Steve Jobs, CEO</div>
+                  <div className="block-main__inscription">Steve Jobs, CEO</div>
                 </div>
               </div>
             </div>
-            <div className="bottom">
+            <div className="posts__bottom">
               <div className="block3">
-                <div className="block_header">
-                  <span className="color_circle color"></span>
-                  <span className="color_rectangle color"></span>
-                  <span className="block_name">ABOUT SUPER LOGO</span>
+                <div className="block-header">
+                  <span className="block-header__color-circle color"></span>
+                  <span className="block-header__color-rectangle color"></span>
+                  <span className="block-header__block-name">ABOUT SUPER LOGO</span>
                 </div>
-                <div className="block_main">
-                  <div className="picture">
-                    <span className="border"></span>
+                <div className="block-main">
+                  <div className="block-main__picture">
+                    <span className="block-main__border"></span>
                     <img src={pic3} alt=""></img>
                   </div>
-                  <p className="long_text">
+                  <p className="block-main__long_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     quam massa, dignissim at nisi nec, iaculis molestie leo.
                     Aenean hendrerit pretium enim quis rutrum. Pellentesque
@@ -146,21 +108,21 @@ const App = () => {
                     sagittis. Praesent placerat, diam non sollicitudin suscipit,
                     eros erat
                   </p>
-                  <div className="inscription white">Read more...</div>
+                  <div className="block-main__inscription white">Read more...</div>
                 </div>
               </div>
               <div className="block4">
-                <div className="block_header">
-                  <span className="color_circle"></span>
-                  <span className="color_rectangle"></span>
-                  <span className="block_name">SOME WORDS OUR CEO</span>
+                <div className="block-header">
+                  <span className="block-header__color-circle"></span>
+                  <span className="block-header__color-rectangle"></span>
+                  <span className="block-header__block-name">SOME WORDS OUR CEO</span>
                 </div>
-                <div className="block_main">
-                  <div className="picture">
-                    <span className="border"></span>
+                <div className="block-main">
+                  <div className="block-main__picture">
+                    <span className="block-main__border"></span>
                     <img src={pic4} alt=""></img>
                   </div>
-                  <p className="long_text">
+                  <p className="block-main__long_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     quam massa, dignissim at nisi nec, iaculis molestie leo.
                     Aenean hendrerit pretium enim quis rutrum. Pellentesque
@@ -170,20 +132,20 @@ const App = () => {
                     sagittis. Praesent placerat, diam non sollicitudin suscipit,
                     eros erat
                   </p>
-                  <div className="inscription">Steve Jobs, CEO</div>
+                  <div className="block-main__inscription">Steve Jobs, CEO</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bottom_text_blocks">
-            <div className="bottom_left">
+          <div className="bottom-posts">
+            <div className="bottom-posts__bottom-services">
               <div className="bottom_block_header">
-                <span className="color_circle color"></span>
-                <span className="color_rectangle color size"></span>
-                <span className="block_name">SERVICES</span>
+                <span className="block-header__color-circle color"></span>
+                <span className="block-header__color-rectangle color size"></span>
+                <span className="block-header__block-name">SERVICES</span>
               </div>
               <div className="bottom_block_main">
-                <p className="long_text distance">
+                <p className="block-main__long_text distance">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   quam massa, dignissim at nisi nec, iaculis molestie leo.
                   Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis
@@ -192,14 +154,14 @@ const App = () => {
                   Quisque consectetur diam id faucibus sagittis. Praesent
                   placerat, diam non sollicitudin suscipit, eros erat
                 </p>
-                <div className="inscription distance white">Read more...</div>
+                <div className="block-main__inscription distance white">Read more...</div>
               </div>
             </div>
-            <div className="bottom_middle">
+            <div className="bottom-posts__bottom-middle">
               <div className="bottom_block_header">
-                <span className="color_circle"></span>
-                <span className="color_rectangle size"></span>
-                <span className="block_name">RECENT POST</span>
+                <span className="block-header__color-circle"></span>
+                <span className="block-header__color-rectangle size"></span>
+                <span className="block-header__block-name">RECENT POST</span>
               </div>
               <div className="bottom_block_main">
                 <div className="part1">
@@ -228,7 +190,7 @@ const App = () => {
                     </p>
                   </div>
                 </div>
-                <div className="part3">
+                <div className="part2">
                   <div className="small_picture">
                     <span className="small_border"></span>
                     <img src={pic7} alt=""></img>
@@ -243,14 +205,14 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="bottom_right">
+            <div className="bottom-posts__bottom-services">
               <div className="bottom_block_header">
-                <span className="color_circle color"></span>
-                <span className="color_rectangle color size"></span>
-                <span className="block_name">SERVICES</span>
+                <span className="block-header__color-circle color"></span>
+                <span className="block-header__color-rectangle color size"></span>
+                <span className="block-header__block-name">SERVICES</span>
               </div>
               <div className="bottom_block_main">
-                <p className="long_text distance">
+                <p className="block-main__long_text distance">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   quam massa, dignissim at nisi nec, iaculis molestie leo.
                   Aenean hendrerit pretium enim quis rutrum. Pellentesque mattis
@@ -259,17 +221,17 @@ const App = () => {
                   Quisque consectetur diam id faucibus sagittis. Praesent
                   placerat, diam non sollicitudin suscipit, eros erat
                 </p>
-                <div className="inscription distance white">Read more...</div>
+                <div className="block-main__inscription distance white">Read more...</div>
               </div>
             </div>
           </div>
-          <div className="clients_block">
-            <div className="clients_block_header">
-              <span className="color_circle"></span>
-              <span className="color_rectangle clients"></span>
-              <span className="block_name">CLIENTS</span>
+          <div className="clients-block">
+            <div className="clients-block__cbheader">
+              <span className="block-header__color-circle"></span>
+              <span className="block-header__color-rectangle clients"></span>
+              <span className="block-header__block-name">CLIENTS</span>
             </div>
-            <div className="main_clients">
+            <div className="clients-block__main-clients">
               <img className="pic1" src={client1} alt=""></img>
               <img className="pic2" src={client2} alt=""></img>
               <img className="pic3" src={client3} alt=""></img>
@@ -279,11 +241,7 @@ const App = () => {
           </div>
         </div>
       </main>
-      <footer className="footer_wrapper">
-        <div className="footer_section">
-          <span className="footer_text">For QA-Internship Using</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
