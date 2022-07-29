@@ -12,6 +12,9 @@ const Header = () => {
               <span className="figure__logo">QA LOGO</span>
             </div>
           </a>
+          <div className="menu-burger">
+            <span></span>
+          </div>
           <div className="search">
             <input className="search__input" type="text"></input>
             <div className="search__square">
