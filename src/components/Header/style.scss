@@ -1,143 +1,210 @@
 .header {
   display: flex;
   width: 100%;
-  height: 146px;
+  height: 90px;
   background-color: #333333;
 
-  &__section {
-    margin: 0 auto;
-    width: 74%;
+  @media (min-width: 1024px) {
+    justify-content: center;
     height: 146px;
   }
-}
 
-.top_part {
-  display: flex;
-  justify-content: space-between;
-  height: 90px;
-  width: 100%;
-}
+  &__section {
+    width: 100%;
+    height: 90px;
+    margin: 0 9px;
 
-.figure {
-  width: 118px;
-  height: 80px;
-  cursor: pointer;
-
-  &__logo {
-    background-color: #333333;
-    position: absolute;
-    color: #8a72ff;
-    height: 29px;
-    top: 41px;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    margin-left: 17px;
-  }
-
-  &__circle {
-    box-sizing: border-box;
-    position: absolute;
-    width: 50px;
-    height: 48px;
-    top: 30px;
-    background: #333333;
-    border: 3px solid #74c4ff;
-    border-radius: 20px;
-  }
-}
-
-.search {
-  width: 201px;
-  height: 73px;
-  cursor: pointer;
-
-  &__input {
-    box-sizing: border-box;
-    position: absolute;
-    width: 201px;
-    height: 33px;
-    top: 40px;
-    background: #333333;
-    border: 1px solid #be72ff;
-    border-radius: 3px;
-    padding-left: 5px;
-    font-family: "Helvetica Neue";
-    font-size: 15px;
-    color: white;
-  }
-
-  &__square {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 72px;
-    background-color: #be72ff;
-    border-radius: 3px;
-    height: 31px;
-    top: 41px;
-    margin-left: 129px;
-    transition: 0.3s;
-
-    &:hover .search__square-text {
-      color: white;
-      text-shadow: 0px 0px 5px black;
-      transition: 0.3s;
+    @media (min-width: 1024px) {
+      width: 74%;
+      height: 146px;
     }
   }
 
-  &__square-text {
-    height: 17px;
-    top: 48px;
-    font-family: "Helvetica Neue";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700px;
-    color: #333333;
-    text-shadow: 0px 0px 5px #74c4ff;
-  }
-}
-
-.bottom-part {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 49px;
-
-  &__menu-option {
+  .top_part {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 123px;
-    height: 47px;
-    background: #333333;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      .menu-burger {
+        display: none;
+      }
+    }
+  }
+
+  .figure {
+    width: 118px;
+    height: 80px;
     cursor: pointer;
 
-    &:hover {
-      background-color: rgba(116, 196, 255, 0.5);
+    &__logo {
+      background-color: #333333;
+      position: absolute;
+      color: #8a72ff;
+      height: 29px;
+      top: 35px;
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      margin-left: 17px;
+
+      @media (min-width: 1024px) {
+        top: 41px;
+        font-size: 24px;
+      }
+    }
+
+    &__circle {
+      box-sizing: border-box;
+      position: absolute;
+      width: 41px;
+      height: 38px;
+      top: 30px;
+      background: #333333;
+      border: 3px solid #74c4ff;
+      border-radius: 20px;
+
+      @media (min-width: 1024px) {
+        width: 50px;
+        height: 48px;
+      }
     }
   }
-}
 
-.option-text {
-  position: absolute;
-  height: 17px;
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-}
+  .menu-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #8a72ff;
+  }
 
-.active {
-  background: #74c4ff;
-  border-radius: 2px;
-}
+  .menu-burger span,
+  .menu-burger span::before,
+  .menu-burger span::after {
+    display: block;
+    position: absolute;
 
-.active_option {
-  font-weight: 700;
-  color: black;
+    width: 25px;
+    height: 2px;
+
+    background-color: #74c4ff;
+  }
+
+  .menu-burger span::before {
+    content: "";
+    top: -8px;
+  }
+
+  .menu-burger span::after {
+    content: "";
+    top: 8px;
+  }
+
+  .search {
+    display: none;
+    width: 201px;
+    height: 73px;
+    cursor: pointer;
+
+    &__input {
+      box-sizing: border-box;
+      position: absolute;
+      width: 201px;
+      height: 33px;
+      top: 40px;
+      background: #333333;
+      border: 1px solid #be72ff;
+      border-radius: 3px;
+      padding-left: 5px;
+      font-family: "Helvetica Neue";
+      font-size: 15px;
+      color: white;
+    }
+
+    &__square {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 72px;
+      background-color: #be72ff;
+      border-radius: 3px;
+      height: 31px;
+      top: 41px;
+      margin-left: 129px;
+      transition: 0.3s;
+
+      &:hover .search__square-text {
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        transition: 0.3s;
+      }
+    }
+
+    &__square-text {
+      height: 17px;
+      top: 48px;
+      font-family: "Helvetica Neue";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700px;
+      color: #333333;
+      text-shadow: 0px 0px 5px #74c4ff;
+    }
+
+    @media (min-width: 1024px) {
+      display: inline;
+    }
+  }
+
+  .bottom-part {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    height: 49px;
+
+    &__menu-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 123px;
+      height: 47px;
+      background: #333333;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(116, 196, 255, 0.5);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  .option-text {
+    position: absolute;
+    height: 17px;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+
+  .active {
+    background: #74c4ff;
+    border-radius: 2px;
+  }
+
+  .active_option {
+    font-weight: 700;
+    color: black;
+  }
 }
