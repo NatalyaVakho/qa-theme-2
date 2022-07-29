@@ -41,7 +41,9 @@ const App = () => {
                 <div className="block-header">
                   <span className="block-header__color-circle color"></span>
                   <span className="block-header__color-rectangle color"></span>
-                  <span className="block-header__block-name">ABOUT SUPER LOGO</span>
+                  <span className="block-header__block-name">
+                    ABOUT SUPER LOGO
+                  </span>
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
@@ -58,14 +60,18 @@ const App = () => {
                     sagittis. Praesent placerat, diam non sollicitudin suscipit,
                     eros erat
                   </p>
-                  <div className="block-main__inscription white">Read more...</div>
+                  <div className="block-main__inscription white">
+                    Read more...
+                  </div>
                 </div>
               </div>
               <div className="block2">
                 <div className="block-header">
                   <span className="block-header__color-circle"></span>
                   <span className="block-header__color-rectangle"></span>
-                  <span className="block-header__block-name">SOME WORDS OUR CEO</span>
+                  <span className="block-header__block-name">
+                    SOME WORDS OUR CEO
+                  </span>
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
@@ -91,7 +97,9 @@ const App = () => {
                 <div className="block-header">
                   <span className="block-header__color-circle color"></span>
                   <span className="block-header__color-rectangle color"></span>
-                  <span className="block-header__block-name">ABOUT SUPER LOGO</span>
+                  <span className="block-header__block-name">
+                    ABOUT SUPER LOGO
+                  </span>
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
@@ -108,14 +116,18 @@ const App = () => {
                     sagittis. Praesent placerat, diam non sollicitudin suscipit,
                     eros erat
                   </p>
-                  <div className="block-main__inscription white">Read more...</div>
+                  <div className="block-main__inscription white">
+                    Read more...
+                  </div>
                 </div>
               </div>
               <div className="block4">
                 <div className="block-header">
                   <span className="block-header__color-circle"></span>
                   <span className="block-header__color-rectangle"></span>
-                  <span className="block-header__block-name">SOME WORDS OUR CEO</span>
+                  <span className="block-header__block-name">
+                    SOME WORDS OUR CEO
+                  </span>
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
@@ -154,7 +166,9 @@ const App = () => {
                   Quisque consectetur diam id faucibus sagittis. Praesent
                   placerat, diam non sollicitudin suscipit, eros erat
                 </p>
-                <div className="block-main__inscription distance white dist-top">Read more...</div>
+                <div className="block-main__inscription distance white dist-top">
+                  Read more...
+                </div>
               </div>
             </div>
             <div className="bottom-posts__bottom-middle">
@@ -166,7 +180,6 @@ const App = () => {
               <div className="bottom_block_main">
                 <div className="part1">
                   <div className="small_picture">
-                    <span className="small_border"></span>
                     <img className="car" src={pic5} alt=""></img>
                   </div>
                   <div className="small_text">
@@ -179,7 +192,6 @@ const App = () => {
                 </div>
                 <div className="part2">
                   <div className="small_picture">
-                    <span className="small_border"></span>
                     <img className="phone" src={pic6} alt=""></img>
                   </div>
                   <div className="small_text">
@@ -192,7 +204,42 @@ const App = () => {
                 </div>
                 <div className="part2">
                   <div className="small_picture">
-                    <span className="small_border"></span>
+                    <img className="bbc" src={pic7} alt=""></img>
+                  </div>
+                  <div className="small_text">
+                    <h3>LOREM IPSUM</h3>
+                    <p className="short_text">
+                      Aenean hendrerit pretium enim quis rutrum. Pellentesque
+                      mattis sem a efficitur auctor.
+                    </p>
+                  </div>
+                </div>
+                <div className="part1">
+                  <div className="small_picture">
+                    <img className="car" src={pic5} alt=""></img>
+                  </div>
+                  <div className="small_text">
+                    <h3>LOREM IPSUM</h3>
+                    <p className="short_text">
+                      Aenean hendrerit pretium enim quis rutrum. Pellentesque
+                      mattis sem a efficitur auctor.
+                    </p>
+                  </div>
+                </div>
+                <div className="part2">
+                  <div className="small_picture">
+                    <img className="phone" src={pic6} alt=""></img>
+                  </div>
+                  <div className="small_text">
+                    <h3>LOREM IPSUM</h3>
+                    <p className="short_text">
+                      Aenean hendrerit pretium enim quis rutrum. Pellentesque
+                      mattis sem a efficitur auctor.
+                    </p>
+                  </div>
+                </div>
+                <div className="part2">
+                  <div className="small_picture">
                     <img className="bbc" src={pic7} alt=""></img>
                   </div>
                   <div className="small_text">
@@ -221,7 +268,9 @@ const App = () => {
                   Quisque consectetur diam id faucibus sagittis. Praesent
                   placerat, diam non sollicitudin suscipit, eros erat
                 </p>
-                <div className="block-main__inscription distance white dist-top">Read more...</div>
+                <div className="block-main__inscription distance white dist-top">
+                  Read more...
+                </div>
               </div>
             </div>
           </div>
@@ -240,7 +289,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </main> 
+      </main>
       <Footer />
     </div>
   );
