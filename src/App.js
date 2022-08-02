@@ -47,7 +47,7 @@ const App = () => {
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
-                    <span className="block-main__border"></span>
+                    
                     <img className="block-main__dog" src={pic1} alt=""></img>
                   </div>
                   <p className="block-main__long_text">
@@ -67,15 +67,15 @@ const App = () => {
               </div>
               <div className="block2">
                 <div className="block-header">
-                  <span className="block-header__color-circle"></span>
-                  <span className="block-header__color-rectangle"></span>
+                  <span className="block-header__color-circle blue"></span>
+                  <span className="block-header__color-rectangle blue"></span>
                   <span className="block-header__block-name">
                     SOME WORDS OUR CEO
                   </span>
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
-                    <span className="block-main__border"></span>
+                    
                     <img className="jobs" src={pic2} alt=""></img>
                   </div>
                   <p className="block-main__long_text">
@@ -95,15 +95,15 @@ const App = () => {
             <div className="posts__bottom">
               <div className="block3">
                 <div className="block-header">
-                  <span className="block-header__color-circle color"></span>
-                  <span className="block-header__color-rectangle color"></span>
+                  <span className="block-header__color-circle color blue"></span>
+                  <span className="block-header__color-rectangle color blue"></span>
                   <span className="block-header__block-name">
                     ABOUT SUPER LOGO
                   </span>
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
-                    <span className="block-main__border"></span>
+                    
                     <img className="lori" src={pic3} alt=""></img>
                   </div>
                   <p className="block-main__long_text">
@@ -131,7 +131,7 @@ const App = () => {
                 </div>
                 <div className="block-main">
                   <div className="block-main__picture">
-                    <span className="block-main__border"></span>
+                    
                     <img className="girl" src={pic4} alt=""></img>
                   </div>
                   <p className="block-main__long_text">
@@ -152,8 +152,8 @@ const App = () => {
           <div className="bottom-posts">
             <div className="bottom-posts__bottom-services">
               <div className="bottom_block_header">
-                <span className="block-header__color-circle color"></span>
-                <span className="block-header__color-rectangle color size"></span>
+                <span className="block-header__color-circle color blue"></span>
+                <span className="block-header__color-rectangle color size blue"></span>
                 <span className="block-header__block-name">SERVICES</span>
               </div>
               <div className="bottom_block_main">
@@ -254,8 +254,8 @@ const App = () => {
             </div>
             <div className="bottom-posts__bottom-services">
               <div className="bottom_block_header">
-                <span className="block-header__color-circle color"></span>
-                <span className="block-header__color-rectangle color size"></span>
+                <span className="block-header__color-circle color blue"></span>
+                <span className="block-header__color-rectangle color size blue"></span>
                 <span className="block-header__block-name">SERVICES</span>
               </div>
               <div className="bottom_block_main">
